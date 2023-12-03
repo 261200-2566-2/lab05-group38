@@ -12,8 +12,10 @@ public class Archer extends  Character implements Ranger {
     }
 
 
-    public void doubleShot(){
-        attack *= 2;
+    public void doubleShot(Character target){
+        int damage = attack * 2 ;
+        target.hp -= damage;
+        if(target.getHp() <= 0 ) target.hp = 0;
     };
 
     public void increaseSpeed(){

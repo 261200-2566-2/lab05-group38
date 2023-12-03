@@ -15,7 +15,7 @@ public class Necromancer extends  Character implements Mage {
         minionTree = new String[10];
     }
 
-    public void castSpell(String skillName) {
+    public void castSpell(String skillName , Character c) {
         if(skillName == "summonMinion") {
             Scanner scanner = new Scanner(System.in);
 

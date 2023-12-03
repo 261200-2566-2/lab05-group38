@@ -57,6 +57,10 @@ public class Character {
 
         return hp;
     }
+    public void setHp(int hp){
+        this.hp = hp;
+    }
+
 
     public int getMana(){
 
